@@ -36,8 +36,6 @@ def main():
     dev_batches = batchify_data(X_dev, y_dev, batch_size)
     test_batches = batchify_data(X_test, y_test, batch_size)
 
-    #################################
-    ## Model specification TODO
     model = nn.Sequential(
               nn.Linear(784, 128),
               nn.LeakyReLU(),
@@ -45,7 +43,6 @@ def main():
             )
     lr=0.1
     momentum=0
-    ##################################
 
     train_model(train_batches, dev_batches, model, lr=lr, momentum=momentum)
 
