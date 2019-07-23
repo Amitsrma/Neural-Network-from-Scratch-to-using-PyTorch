@@ -41,7 +41,7 @@ def main():
     test_batches = batchify_data(X_test, y_test, batch_size)
 
     #################################
-    ## Model specification TODO
+
     model = nn.Sequential(
               nn.Conv2d(1, 32, kernel_size=3),
               nn.ReLU(),
@@ -56,8 +56,7 @@ def main():
               nn.Linear(in_features=128,
                         out_features=10),
             )
-    
-    ##################################
+
 
     train_model(train_batches, dev_batches, model, nesterov=True)
 
