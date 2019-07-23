@@ -2,9 +2,6 @@ import numpy as np
 import math
 
 """
- ==================================
- Problem 3: Neural Network Basics
- ==================================
     Generates a neural network with the following architecture:
         Fully connected neural network.
         Input vector takes in two features.
